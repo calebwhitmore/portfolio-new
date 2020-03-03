@@ -14,7 +14,7 @@ const _ = require("lodash")
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
-  const tagTemplate = path.resolve("src/templates/tagResults.js")
+  // const tagTemplate = path.resolve("src/templates/tagResults.js")
   const projectPage = path.resolve(`./src/components/project.js`)
   return graphql(
     `
@@ -54,33 +54,33 @@ exports.createPages = ({ graphql, actions }) => {
         path: project.node.fields.slug,
         component: projectPage,
         context: {
-          slug: post.node.fields.slug,
+          slug: project.node.fields.slug,
           previous,
           next,
         },
       })
     })
     
-    let tags = []
-    // Iterate through each post, putting all found tags into `tags`
-    _.each(projects, edge => {
-      if (_.get(edge, "node.frontmatter.tags")) {
-        tags = tags.concat(edge.node.frontmatter.tags)
-      }
-    })
-    // Eliminate duplicate tags
-    tags = _.uniq(tags)
+    // let tags = []
+    // // Iterate through each post, putting all found tags into `tags`
+    // _.each(projects, edge => {
+    //   if (_.get(edge, "node.frontmatter.tags")) {
+    //     tags = tags.concat(edge.node.frontmatter.tags)
+    //   }
+    // })
+    // // Eliminate duplicate tags
+    // tags = _.uniq(tags)
 
-    // Make tag pages
-    tags.forEach(tag => {
-      createPage({
-        path: `/tags/${_.kebabCase(tag)}/`,
-        component: tagTemplate,
-        context: {
-          tag,
-        },
-      })
-    })
+    // // Make tag pages
+    // tags.forEach(tag => {
+    //   createPage({
+    //     path: `/tags/${_.kebabCase(tag)}/`,
+    //     component: tagTemplate,
+    //     context: {
+    //       tag,
+    //     },
+    //   })
+    // })
   })
 }
 
