@@ -5,11 +5,10 @@
     max-width:1200px;
     margin:0px auto;
     display:grid;
-    grid-template-columns: repeat(4, [col] 1fr);
+    grid-template-columns: repeat(3, [col] 1fr);
     grid-gap: var(--grid-gap);
     .component {
         grid-column: span 1;
-        min-height:200px;
         height:auto;
         display:flex;
         flex-direction: column;
@@ -27,11 +26,12 @@
             justify-content: center;
 
             p {
-                flex: 1 0 auto;
+                flex: 1 1 auto;
                 align-content:flex-end;
                 text-align: right;
                 color:var(--dark);
                 line-height:100%;
+                padding:0px
             }
 
             .title {
@@ -43,6 +43,9 @@
             &:hover {
                 background-color:var(--lighter);
                 padding:0px 8px;
+                p {
+                    color:var(--darker);
+                }
             }
 
             &:active {
@@ -70,6 +73,7 @@
         background-color:var(--lightest);
         transition:0.3s all ease;
         cursor:pointer;
+        min-height:200px;
 
         &:hover {
             background-color:var(--lighter);

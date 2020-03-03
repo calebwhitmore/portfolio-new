@@ -8,15 +8,15 @@ const Header = ({ firstName, secondName }) => (
   <header>
     <div className="container"
     >
-      <h1>
-        <Link
+      <Link
           to="/"
         >
+      <h1>
           {firstName}
           <br></br>
           {secondName}
-        </Link>
       </h1>
+      </Link>
       <h2>
         Multi-disciplinary
         <br></br>

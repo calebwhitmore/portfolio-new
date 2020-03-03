@@ -14,7 +14,7 @@ import "./layout.scss"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
+    query ProjectPagesQuery {
       site {
         siteMetadata {
           title
