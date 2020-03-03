@@ -26,12 +26,19 @@ const ComponentContainer= ({ headshot }) => {
           node {
             excerpt
             fields {
-              slug
+                slug
             }
             frontmatter {
-              date(formatString: "MMMM DD, YYYY")
-              title
-              tags
+                date(formatString: "MMMM DD, YYYY")
+                title
+                tags
+                postImage {
+                        childImageSharp {
+                            fluid(maxWidth: 1200, quality: 100) {
+                            ...GatsbyImageSharpFluid
+                            }
+                        }
+                    }
 
             }
           }

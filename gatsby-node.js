@@ -15,7 +15,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
   // const tagTemplate = path.resolve("src/templates/tagResults.js")
-  const projectPage = path.resolve(`./src/components/project.js`)
+  const projectPageTemplate = path.resolve(`./src/templates/project-page.js`)
   return graphql(
     `
       {
@@ -52,7 +52,7 @@ exports.createPages = ({ graphql, actions }) => {
 
       createPage({
         path: project.node.fields.slug,
-        component: projectPage,
+        component: projectPageTemplate,
         context: {
           slug: project.node.fields.slug,
           previous,
