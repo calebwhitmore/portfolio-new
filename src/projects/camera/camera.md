@@ -1,12 +1,19 @@
 ---
 path: "/project/camera"
-date: "2020-01-01"
+date: "2020-02-01"
 title: "Camera redesign"
 tags: "industrial"
-postImage: "./camera.png"
-postImageAltTag: "Illustration"
+projectImage: "./camera-front-view.png"
+projectImageAltTag: "Illustration"
 ---
 
 This is a camera redesign
 
-![Main shot](./camera.png)
+![Main shot](./camera-front-view.png)
+
+![Side view](./camera-side-view.png)
+
+![Top view](./camera-top-view.png)
+
+![On desk](./camera-on-desk.png)
+

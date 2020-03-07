@@ -2,11 +2,12 @@
 
 .component-container {
     width:100%;
-    max-width:1200px;
-    margin:0px auto;
     display:grid;
     grid-template-columns: repeat(3, [col] 1fr);
     grid-gap: var(--grid-gap);
+    grid-column-start:2;
+    grid-column-end:5;
+    z-index:2;
     .component {
         grid-column: span 1;
         height:auto;
@@ -41,7 +42,7 @@
             }
             
             &:hover {
-                background-color:var(--lighter);
+                background-color:var(--lightest);
                 padding:0px 8px;
                 p {
                     color:var(--darker);
@@ -49,7 +50,7 @@
             }
 
             &:active {
-                background-color:var(--light);
+                background-color:var(--lighter);
                 padding:0px 16px;
 
                 p {
@@ -68,26 +69,6 @@
             }
         }
         
-    }
-    .project {
-        background-color:var(--lightest);
-        transition:0.3s all ease;
-        cursor:pointer;
-        min-height:200px;
-
-        &:hover {
-            background-color:var(--lighter);
-        }
-
-        &:active {
-            background-color:var(--light);
-        }
-
-        &:focus {
-            outline:4px solid var(--black);
-            outline-offset: -4px;
-            padding:0px 16px;
-        }
     }
 }
 

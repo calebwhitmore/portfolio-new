@@ -3,15 +3,19 @@ import React from "react"
 import Layout from "../components/layout"
 import ComponentContainer from "../components/componentContainer"
 import SEO from "../components/seo"
-import { useStaticQuery, graphql } from "gatsby"
 
-const IndexPage = ({ children }) => {
-    return (
-      <Layout>
+const IndexPage = () => {
+  return (
+    <Layout>
       <SEO title="Home" />
-      <ComponentContainer/>
+      <h2 className="page-title">
+        Multi-disciplinary
+        <br></br>
+        designer
+      </h2>
+      <ComponentContainer />
     </Layout>
-    )
+  )
 }
 
 export default IndexPage

@@ -1,4 +1,38 @@
-.post-image {
-    width:auto;
-    height:100%;
+.project {
+  background-color: var(--lightest);
+  transition: 0.3s all ease;
+  cursor: pointer;
+  min-height: 200px;
+
+  &:hover {
+    background-color: var(--lighter);
+  }
+
+  &:active {
+    background-color: var(--light);
+  }
+
+  &:focus {
+    outline: 4px solid var(--black);
+    outline-offset: -4px;
+    padding: 0px 16px;
+  }
+  .post-image {
+    width: auto;
+    height: 100%;
+  }
+
+  h3 {
+    padding-left: 16px;
+    font-size: 16px;
+    pointer-events: all;
+    width: auto;
+  }
+  h4 {
+    padding-left: 16px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    pointer-events: all;
+    width: auto;
+  }
 }

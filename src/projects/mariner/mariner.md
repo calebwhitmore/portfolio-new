@@ -1,10 +1,10 @@
 ---
 path: "/project/mariner-interiors"
-date: "2020-01-01"
-title: "Branding"
+date: "2020-03-01"
+title: "Mariner Interiors"
 tags: "Branding"
-postImage: "./mariner-interiors.png"
-postImageAltTag: "Illustration"
+projectImage: "./mariner-interiors.png"
+projectImageAltTag: "Illustration"
 ---
 
 This is a branding redesign

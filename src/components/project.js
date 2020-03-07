@@ -13,10 +13,10 @@ export default function Project(props) {
       <div className="project">
       <Img 
             className="post-image" 
-            fluid={props.project.frontmatter.postImage.childImageSharp.fluid} 
-            alt={props.project.frontmatter.postImageAltTag}/>
-        <h1>{props.project.frontmatter.title}</h1>
-        <h2>{props.project.frontmatter.date}</h2>
+            fluid={props.project.frontmatter.projectImage.childImageSharp.fluid} 
+            alt={props.project.frontmatter.projectImageAltTag}/>
+        <h3>{props.project.frontmatter.title}</h3>
+        <h4>{props.project.frontmatter.date}</h4>
       </div>
     </Link>
   )

@@ -7,41 +7,34 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
+import Menu from "./menu"
 import "./layout.scss"
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query ProjectPagesQuery {
-      site {
-        siteMetadata {
-          title
-          firstName
-          secondName
-        }
-      }
+class Layout extends React.Component {
+  componentDidMount() {
+    var today = new Date().getHours()
+    var root = document.getElementsByTagName("html")[0]
+    const { children } = PropTypes.node.isRequired
+    if (today >= 7 && today <= 18) {
+      root.setAttribute("class", "light-mode")
+    } else {
+      root.setAttribute("class", "dark-mode")
     }
-  `)
+  }
+  constructor(props) {
+    super(props);
+  }
 
-  return (
-    <div className="page-container">
-      <Header 
-        siteTitle={data.site.siteMetadata.title}
-        firstName={data.site.siteMetadata.firstName}
-        secondName={data.site.siteMetadata.secondName}
-      />
-      {children}
-      <footer>
-          
-        </footer>
-    </div>
-  )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  render(props) {
+    return (
+      <div className="page-container">
+        <Menu/>
+        {this.props.children}
+        <footer></footer>
+      </div>
+    )
+  }
 }
 
 export default Layout

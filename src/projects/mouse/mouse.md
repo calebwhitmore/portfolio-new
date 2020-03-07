@@ -1,10 +1,10 @@
 ---
 path: "/project/mariner-interiors"
 date: "2020-01-01"
-title: "Branding"
+title: "Mouse redesign"
 tags: "industrial"
-postImage: "./mouse.png"
-postImageAltTag: "Illustration"
+projectImage: "./mouse.png"
+projectImageAltTag: "Illustration"
 ---
 
 We use computer mouses everyday - so why not redesign one?

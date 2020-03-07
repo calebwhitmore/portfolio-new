@@ -1,69 +1,93 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 
 :root {
-    --black: #000000;
-    --darkest: #222222;
-    --darker:#444444;
-    --dark: #666666;
-    --light: #ababab;
-    --lighter: #dadada;
-    --lightest: #f1f1f1;
-    --white: #ffffff;
+  --black: #000000;
+  --darkest: #222222;
+  --darker: #444444;
+  --dark: #666666;
+  --light: #ababab;
+  --lighter: #dadada;
+  --lightest: #f1f1f1;
+  --white: #ffffff;
 
-    --theme-1:#0064ea;
+  --theme-1: #0064ea;
 
-    --whole-component: 100%;
-    --half-component: 50%;
+  --whole-component: 100%;
+  --half-component: 50%;
 
-    --grid-gap:20px;
+  --grid-gap: 30px;
+  --max-width: 1400px;
 
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-    margin:0 var(--grid-gap);
+  margin: 0 var(--grid-gap);
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-h1, h2, h3, h4, p, a, span, div {
-    padding:0px;
-    margin:0px;
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+span,
+div {
+  padding: 0px;
+  margin: 0px;
 }
 h1 {
-    font-size:24px;
-    line-height: 24px;
-    font-weight:600;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 600;
 }
 h2 {
-    font-size:24px;
-    line-height: 24px;
-    font-weight:400;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
 }
 
 h4 {
-    font-size:14px;
-    line-height: 20px;
-    font-weight:400;
-    color: var(--dark);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--dark);
+}
+
+.page-title {
+  animation: titleIn 0.3s ease forwards;
+}
+
+@keyframes titleIn {
+  0% {
+    opacity: 0;
+    transform: translate(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0px);
+  }
 }
 
 p {
-    font-size:14px;
-    line-height: 20px;
-    font-weight:400;
-    color: var(--dark);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--dark);
 }
 
 h1 a {
-    &:hover{
-        text-decoration: underline;
-    }
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 a {
-    color:var(--darkest);
-    text-decoration: none;
+  color: var(--darkest);
+  text-decoration: none;
 }
