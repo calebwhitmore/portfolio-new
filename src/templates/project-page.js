@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import ComponentContainer from "../components/componentContainer"
+import Projects from "../components/projects"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
 
@@ -24,10 +24,18 @@ class ProjectPageTemplate extends React.Component {
               <br />
               {project.frontmatter.tags}
             </h2>
+            <div className="project-sub-head">
+              <h3 className="project-sub-title">
+                {project.frontmatter.projectSubTitle}
+              </h3>
+              <h4 className="project-description">
+                {project.frontmatter.projectDescription}
+              </h4>
+            </div>
             <div
               className="project-open-content"
               dangerouslySetInnerHTML={{ __html: project.html }}
-            />
+            ></div>
           </div>
           <div className="more-content">
             {next && (
@@ -36,7 +44,7 @@ class ProjectPageTemplate extends React.Component {
                   <p>←</p>
                 </div>{" "}
                 <h4>
-                  <span>Next project</span>
+                  <span>Previous project</span>
                   <br />
                   {next.frontmatter.title}
                 </h4>
@@ -45,7 +53,7 @@ class ProjectPageTemplate extends React.Component {
             {previous && (
               <Link className="previous" to={previous.fields.slug} rel="prev">
                 <h4>
-                  <span>Previous project</span>
+                  <span>Next project</span>
                   <br />
                   {previous.frontmatter.title}
                 </h4>
@@ -55,7 +63,7 @@ class ProjectPageTemplate extends React.Component {
               </Link>
             )}
           </div>
-          <ComponentContainer />
+          <Projects />
         </div>
       </Layout>
     )
@@ -87,6 +95,8 @@ export const pageQuery = graphql`
             }
           }
         }
+        projectSubTitle
+        projectDescription
       }
     }
   }

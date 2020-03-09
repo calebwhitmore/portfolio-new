@@ -1,7 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import ComponentContainer from "../components/componentContainer"
+import Projects from "../components/projects"
 import SEO from "../components/seo"
 
 const IndexPage = () => {
@@ -13,7 +13,7 @@ const IndexPage = () => {
         <br></br>
         designer
       </h2>
-      <ComponentContainer />
+      <Projects />
     </Layout>
   )
 }

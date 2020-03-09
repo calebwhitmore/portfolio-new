@@ -1,12 +1,10 @@
-@import './variables.scss';
-
-.component-container {
+.projects {
     width:100%;
     display:grid;
-    grid-template-columns: repeat(3, [col] 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: var(--grid-gap);
     grid-column-start:2;
-    grid-column-end:5;
+    grid-column-end:4;
     z-index:2;
     .component {
         grid-column: span 1;

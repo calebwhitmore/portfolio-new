@@ -15,10 +15,24 @@
   --whole-component: 100%;
   --half-component: 50%;
 
-  --grid-gap: 30px;
+  --grid-gap: 2rem;
   --max-width: 1400px;
 
+  --toggle-size:40px;
+
+  --grid-template-columns: repeat(3, 1fr);
+
   font-family: "Poppins", sans-serif;
+}
+.dark-mode {
+  --black: #ffffff;
+  --darkest: #f1f1f1;
+  --darker: #dadada;
+  --dark: #ababab;
+  --light: #666666;
+  --lighter: #444444;
+  --lightest: #222222;
+  --white: #000000;
 }
 
 body {
@@ -27,6 +41,11 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+button {
+  outline: none;
+  border: none;
 }
 
 h1,
@@ -39,24 +58,33 @@ span,
 div {
   padding: 0px;
   margin: 0px;
+  color: var(--black);
 }
 h1 {
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 600;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 800;
 }
 h2 {
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 40px;
+  line-height: 40px;
   font-weight: 400;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  color: var(--dark);
 }
 
 h4 {
   font-size: 14px;
-  line-height: 20px;
+  line-height: 28px;
   font-weight: 400;
   color: var(--dark);
 }
+
 
 .page-title {
   animation: titleIn 0.3s ease forwards;

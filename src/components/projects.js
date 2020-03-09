@@ -7,10 +7,10 @@ import Project from "./project"
 
 import Image from "./image"
 
-import "./componentContainer.scss"
+import "./projects.scss"
 import headshot from "../images/headshot.jpg"
 
-const ComponentContainer= ({ headshot }) => {
+const Projects = ({ headshot }) => {
 
     const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -49,7 +49,7 @@ const ComponentContainer= ({ headshot }) => {
     const projects = data.allMarkdownRemark.edges;
 
     return (
-        <div className="component-container">
+        <div className="projects">
             {projects.map(({ node, index }) => {
             return(<Project project={node} key={index} />)
             })}
@@ -57,4 +57,4 @@ const ComponentContainer= ({ headshot }) => {
     )
 }
 
-export default ComponentContainer
+export default Projects
