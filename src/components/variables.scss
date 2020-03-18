@@ -1,28 +1,64 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 
 :root {
-  --black: #000000;
-  --darkest: #222222;
-  --darker: #444444;
-  --dark: #666666;
-  --light: #ababab;
-  --lighter: #dadada;
-  --lightest: #f1f1f1;
+  --black: rgba(0,0,0,1);;
+  --darkest: rgba(0,0,0,0.9);
+  --darker: rgba(0,0,0,0.8);
+  --dark: rgba(0,0,0,0.6);
+  --light: rgba(0,0,0,0.24);
+  --lighter: rgba(0,0,0,0.12);
+  --lightest: rgba(0,0,0,0.08);
   --white: #ffffff;
+
+  --black-overlay-40: rgba(0,0,0,0.4);
+  --white-overlay-98: rgba(255,255,255,0.90);
 
   --theme-1: #0064ea;
 
-  --whole-component: 100%;
-  --half-component: 50%;
+  --toggle-size: 40px;
 
-  --grid-gap: 2rem;
+  --spacing: 2rem;
   --max-width: 1400px;
+  --grid-template-columns-3: 2fr 4fr 4fr;
+  --grid-template-columns-2: repeat(2, 1fr);
+  --grid-template-columns-1: 1fr;
 
-  --toggle-size:40px;
 
-  --grid-template-columns: repeat(3, 1fr);
+  --font-size-xl: 60px;
+  --font-size-l: 40px;
+  --font-size-m: 32px;
+  --font-size-s: 24px;
+  --font-size-xs: 16px;
 
   font-family: "Poppins", sans-serif;
+}
+
+@media only screen and (max-width: 1000px) {
+  :root {
+    --grid-template-columns-3: 3fr 7fr;
+    --grid-template-columns-2: 1fr;
+    --spacing: 1.4rem;
+
+    --font-size-xl: 32px;
+    --font-size-l: 32px;
+    --font-size-m: 28px;
+    --font-size-s: 24px;
+    --font-size-xs: 16px;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --grid-template-columns: 1;
+    --spacing: 1rem;
+
+    --font-size-xl: 32px;
+    --font-size-l: 28px;
+    --font-size-m: 24px;
+    --font-size-s: 20px;
+    --font-size-xs: 16px;
+  }
 }
 .dark-mode {
   --black: #ffffff;
@@ -33,10 +69,13 @@
   --lighter: #444444;
   --lightest: #222222;
   --white: #000000;
+  --white-overlay-98: rgba(0,0,0,0.98);
+  --black-overlay-40: rgba(100,100,100,0.4);
+  
 }
 
 body {
-  margin: 0 var(--grid-gap);
+  margin: 0 var(--spacing);
 }
 
 * {
@@ -61,30 +100,30 @@ div {
   color: var(--black);
 }
 h1 {
-  font-size: 60px;
-  line-height: 60px;
-  font-weight: 800;
+  font-size: var(--font-size-m);
+  line-height: var(--font-size-m);
+
+  font-weight: 900;
 }
 h2 {
-  font-size: 40px;
-  line-height: 40px;
+  font-size: var(--font-size-s);
+  line-height: var(--font-size-m);
   font-weight: 400;
 }
 
 h3 {
-  font-size: 20px;
-  line-height: 28px;
+  font-size: var(--font-size-s);
+  line-height: var(--font-size-m);
   font-weight: 400;
   color: var(--dark);
 }
 
 h4 {
-  font-size: 14px;
-  line-height: 28px;
+  font-size: var(--font-size-xs);
+  line-height: var(--font-size-s);
   font-weight: 400;
   color: var(--dark);
 }
-
 
 .page-title {
   animation: titleIn 0.3s ease forwards;
@@ -118,4 +157,15 @@ h1 a {
 a {
   color: var(--darkest);
   text-decoration: none;
+}
+
+@keyframes fadeUp {
+  0%{
+    opacity:0;
+    transform:translateY(40px);
+  }
+  100%{
+    opacity:1;
+    transform:translateY(0px);
+  }
 }

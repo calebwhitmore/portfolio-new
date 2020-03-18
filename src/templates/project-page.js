@@ -25,9 +25,9 @@ class ProjectPageTemplate extends React.Component {
               {project.frontmatter.tags}
             </h2>
             <div className="project-sub-head">
-              <h3 className="project-sub-title">
+              <h4 className="project-sub-title">
                 {project.frontmatter.projectSubTitle}
-              </h3>
+              </h4>
               <h4 className="project-description">
                 {project.frontmatter.projectDescription}
               </h4>

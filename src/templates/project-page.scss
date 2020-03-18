@@ -27,12 +27,15 @@
   .project-page {
     .project-sub-head {
       display:grid;
-      grid-gap:var(--grid-gap);
-      grid-template-columns: repeat(2, 1fr);
+      grid-gap:var(--spacing);
+      grid-template-columns: var(--grid-template-columns-2);
+      opacity:0;
+      animation:fadeUp 0.2s forwards 0.1s ease;
       .project-sub-title {
         grid-column-start: 1;
         grid-column-end: 2;
         color:var(--darkest);
+        font-weight: 600;
       }
       .project-description {
         grid-column-start: 2;
@@ -40,12 +43,17 @@
         color:var(--dark);
       }
     }
+
+    .project-open-content {
+      opacity:0;
+      animation:fadeUp 0.6s forwards 0.2s ease;
+    }
     
     h3, h4 {
-      margin: var(--grid-gap) 0px;
+      margin: var(--spacing) 0px;
     }
     p {
-      margin: var(--grid-gap) 0px;
+      margin: var(--spacing) 0px;
     }
   }
 
@@ -53,8 +61,8 @@
     padding: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: var(--grid-gap);
-    margin: var(--grid-gap) 0;
+    grid-gap: var(--spacing);
+    margin: var(--spacing) 0;
     overflow: hidden;
     a {
       font-size: 20px;
@@ -62,7 +70,7 @@
       width: 100%;
       color: var(--neutral-light);
       background-color: var(--white);
-      padding: var(--grid-gap) 0px;
+      padding: var(--spacing) 0px;
       display: flex;
       transition: 0.3s all ease;
 
@@ -89,14 +97,14 @@
         p {
           color: var(--black);
           transition: 0.25s all ease;
-          margin: 10px 0px;
+          margin: calc(var(--spacing) / 4) 0px;
         }
       }
 
       &:hover {
         color: var(--black);
         background-color: var(--lightest);
-        padding: var(--grid-gap);
+        padding: var(--spacing);
         h4 {
           color: var(--neutral-dark);
           font-weight: 600;
@@ -151,4 +159,26 @@
       }
     }
   }
+}
+
+@media only screen and (max-width: 1000px) {
+  .project-page-container {
+    grid-column-end: 2;
+    .project-page {
+      .project-sub-head {
+        grid-template-columns:1fr;
+        .project-sub-title,.project-description  {
+          grid-column-start: 1;
+          grid-column-end: 2;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .project-page-container {
+    grid-column-start: 1;
+    grid-column-end: 2  ;
+}
 }
