@@ -1,9 +1,10 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Layout from "../components/layout"
-import Projects from "../components/projects"
+import Layout from "../components/layout/layout"
+import Projects from "../components/projects/projects"
 import SEO from "../components/seo"
+
 import Img from "gatsby-image"
 
 import "./project-page.scss"
@@ -15,7 +16,7 @@ class ProjectPageTemplate extends React.Component {
     const { previous, next } = this.props.pageContext
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout location={this.props.location} title={siteTitle} id={2}>
         <SEO title={project.frontmatter.title} description={project.excerpt} />
         <div className="project-page-container">
           <div className="project-page">
@@ -32,6 +33,11 @@ class ProjectPageTemplate extends React.Component {
                 {project.frontmatter.projectDescription}
               </h4>
             </div>
+            <Img
+              className="project-header-image"
+              fluid={project.frontmatter.projectImage.childImageSharp.fluid}
+              alt={project.frontmatter.projectImageAltTag}
+            />
             <div
               className="project-open-content"
               dangerouslySetInnerHTML={{ __html: project.html }}

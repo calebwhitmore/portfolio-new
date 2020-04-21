@@ -1,0 +1,95 @@
+.background {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black-overlay-40);
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+
+  animation: fade 0.3s forwards ease;
+}
+
+.aboutContainer {
+  max-width: 800px;
+  width: auto;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  border-radius: 20px;
+  position:relative;
+  transform:translate(0px, 40px);
+  opacity:0;
+  animation: fadeUp 0.3s forwards ease 0.15s;
+  box-shadow: 0px 12px 24px 0px var(--black-overlay-12);
+
+  .headshot {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    overflow: hidden;
+    img {
+      height: auto;
+      width: 200px;
+      transform: translate(0px, -40px);
+    }
+  }
+  p {
+    margin-top: 40px;
+    font-size: 16px;
+  }
+
+  .close {
+    .line1 {
+    }
+    .line2 {
+    }
+  }
+  .close {
+    background-color: transparent;
+    display: block;
+    width: 52px;
+    height: 52px;
+    top: 32px;
+    right: var(--spacing);
+    border-radius: 4px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1000;
+    opacity: 1;
+    cursor: pointer;
+
+    .bar-1,
+    .bar-3 {
+      width: 100%;
+      height: 3px;
+      position: relative;
+      background-color: var(--darker);
+    }
+
+    .bar-1 {
+      transform: translate(0px, 1.5px) rotate(-45deg);
+      transform-origin: center;
+    }
+
+    .bar-3 {
+      transform: translate(0px, -1.5px) rotate(45deg);
+      transform-origin: center;
+    }
+
+    &:hover {
+      background-color: var(--lightest);
+    }
+    &:active {
+      background-color: var(--lighter);
+    }
+  }
+}
+

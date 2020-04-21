@@ -1,0 +1,76 @@
+@mixin transition {
+  @for $i from 1 through 1000 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{$i * .12}s ;
+    }
+  }
+}
+
+.project-container {
+  @include transition;
+    border-radius: 10px;
+    overflow: hidden;
+    transition:0.3s all ease;
+    opacity:0;
+    transform:translate(0px, 40px);
+    animation: fadeUp 0.3s forwards ease;
+
+    &:focus {
+      outline: none;
+      box-shadow:0px 0px 0px 4px var(--black);
+
+      .project {
+        h3, h4 {
+          color:var(--darkest);
+        }
+        h3 {
+          font-variation-settings: "wdth" 75, "wght" 800;
+        }
+      }
+    }
+}
+
+.project {
+  background-color: var(--lightest);
+  transition: 0.3s all ease;
+  cursor: pointer;
+  min-height: 200px;
+
+  &:hover {
+    background-color: var(--lighter);
+    
+    h3, h4 {
+      color:var(--darkest);
+    }
+    h3 {
+      font-variation-settings: "wdth" 75, "wght" 800;
+    }
+  }
+  
+  &:active {
+    background-color: var(--light);
+  } 
+
+  .post-image {
+    width: auto;
+    height: 100%;
+  }
+
+  h3, h4 {
+    transition:0.3s all ease;
+  }
+
+  h3 {
+    padding-left: var(--spacing);
+    font-size: var(--font-size-xs);
+    line-height:var(--font-size-s);
+    font-variation-settings: "wdth" 75, "wght" 500;
+  }
+  h4 {
+    padding-left: var(--spacing);
+    padding-bottom: var(--spacing);
+    font-size: var(--font-size-xs);
+    line-height:var(--font-size-s);
+    font-variation-settings: "wdth" 75, "wght" 400;
+  }
+}

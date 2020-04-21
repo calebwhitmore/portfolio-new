@@ -1,0 +1,45 @@
+.page {
+  width: 100%;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  z-index: 2;
+  opacity: 0;
+  animation: fadeUp 0.6s forwards 0.1s ease;
+  .projects {
+    display: grid;
+    width: 100%;
+    grid-template-columns: var(--grid-template-columns-2);
+    grid-gap: var(--spacing);
+    .component {
+      grid-column: span 1;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .page {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    .projects {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .page {
+    .projects {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .page {
+    grid-column-start: 0;
+    grid-column-end: 1;
+  }
+}

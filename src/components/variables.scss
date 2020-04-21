@@ -1,28 +1,33 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 
+@font-face {
+  font-family: "Inter variable font";
+  src: url("../assets/Inter.otf") format("truetype");
+}
+
 :root {
-  --black: rgba(0,0,0,1);;
-  --darkest: rgba(0,0,0,0.9);
-  --darker: rgba(0,0,0,0.8);
-  --dark: rgba(0,0,0,0.6);
-  --light: rgba(0,0,0,0.24);
-  --lighter: rgba(0,0,0,0.12);
-  --lightest: rgba(0,0,0,0.08);
+  --black: rgb(0, 0, 0);
+  --darkest: rgba(0, 0, 0, 0.9);
+  --darker: rgba(0, 0, 0, 0.8);
+  --dark: rgba(0, 0, 0, 0.6);
+  --light: rgba(0, 0, 0, 0.24);
+  --lighter: rgba(0, 0, 0, 0.12);
+  --lightest: rgba(0, 0, 0, 0.08);
   --white: #ffffff;
 
-  --black-overlay-40: rgba(0,0,0,0.4);
-  --white-overlay-98: rgba(255,255,255,0.90);
+  --black-overlay-12: rgba(0, 0, 0, 0.12);
+  --black-overlay-40: rgba(0, 0, 0, 0.4);
+  --white-overlay-98: rgba(255, 255, 255, 0.9);
 
   --theme-1: #0064ea;
 
   --toggle-size: 40px;
 
   --spacing: 2rem;
-  --max-width: 1400px;
+  --max-width: 1200px;
   --grid-template-columns-3: 2fr 4fr 4fr;
   --grid-template-columns-2: repeat(2, 1fr);
   --grid-template-columns-1: 1fr;
-
 
   --font-size-xl: 60px;
   --font-size-l: 40px;
@@ -30,7 +35,8 @@
   --font-size-s: 24px;
   --font-size-xs: 16px;
 
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter variable font", sans-serif;
+  font-variation-settings: "wdth" 20, "wght" 600;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -47,7 +53,6 @@
   }
 }
 
-
 @media only screen and (max-width: 600px) {
   :root {
     --grid-template-columns: 1;
@@ -61,17 +66,17 @@
   }
 }
 .dark-mode {
-  --black: #ffffff;
-  --darkest: #f1f1f1;
-  --darker: #dadada;
-  --dark: #ababab;
-  --light: #666666;
-  --lighter: #444444;
-  --lightest: #222222;
+  --black: rgb(255,255,255);
+  --darkest: rgba(255,255,255, 0.9);
+  --darker: rgba(255,255,255, 0.8);
+  --dark: rgba(255,255,255, 0.6);
+  --light: rgba(255,255,255, 0.32);
+  --lighter: rgba(255,255,255, 0.24);
+  --lightest: rgba(255,255,255, 0.18);
   --white: #000000;
-  --white-overlay-98: rgba(0,0,0,0.98);
-  --black-overlay-40: rgba(100,100,100,0.4);
-  
+  --white-overlay-98: rgba(0, 0, 0, 0.98);
+  --black-overlay-40: rgba(100, 100, 100, 0.40);
+  --black-overlay-12: rgba(100, 100, 100, 0.12);
 }
 
 body {
@@ -102,13 +107,13 @@ div {
 h1 {
   font-size: var(--font-size-m);
   line-height: var(--font-size-m);
-
-  font-weight: 900;
 }
 h2 {
   font-size: var(--font-size-s);
   line-height: var(--font-size-m);
-  font-weight: 400;
+  font-variation-settings: "wdth" 75, "wght" 400;
+  color: var(--darker);
+  
 }
 
 h3 {
@@ -123,22 +128,6 @@ h4 {
   line-height: var(--font-size-s);
   font-weight: 400;
   color: var(--dark);
-}
-
-.page-title {
-  animation: titleIn 0.3s ease forwards;
-}
-
-@keyframes titleIn {
-  0% {
-    opacity: 0;
-    transform: translate(-20px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0px);
-  }
 }
 
 p {
@@ -160,12 +149,21 @@ a {
 }
 
 @keyframes fadeUp {
-  0%{
-    opacity:0;
-    transform:translateY(40px);
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
   }
-  100%{
-    opacity:1;
-    transform:translateY(0px);
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fade {
+  0%{
+      opacity:0;
+  }
+  100% {
+      opacity:1;
   }
 }
