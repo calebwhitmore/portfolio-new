@@ -9,6 +9,12 @@ projectSubTitle: "A redesign of the standard computer mouse"
 projectDescription: "We use computer mouses everyday - so why not redesign one?"
 ---
 
+![Top view](./top-view.png)
+
+![Side view](./side-view.png)
+
+![Front view](./front-view.png)
+
 ![Context shot 1](./contextperspective.jpg)
 
 ![Context shot 2](./contextorthoganal.jpg)
@@ -34,6 +40,10 @@ projectDescription: "We use computer mouses everyday - so why not redesign one?"
         Owning a home is a pretty daunting task, one which can come with a lot of complexity. With the illustrations, I wanted to execute a style that was simple and approachable. 
     </h4>
 </div>
+
+![Packaging top view](./top-view-packaging.png)
+
+![Packaging case open](./packaging-case-open.png)
 
 ![Packaging](./packaging.jpg)
 
