@@ -6,7 +6,7 @@ tags: "Product Design"
 projectImage: "./outlook-logo.png"
 projectImageAltTag: "Illustration"
 projectSubTitle: "I am currently a product designer at Outlook, Microsofts email client."
-projectDescription: "As a product designer on the Outlook Web client, I've worked on a large variety of projects across it's ecosystem. It's taught me how to work efficiently within a large organization that involves a lot of moving parts. This page contains snapshots of some of the projects I've been a part of."
+projectDescription: "As a product designer on the Outlook Web client, I've worked on as huge range of projects across it's ecosystem. It's taught me how to work efficiently inside a large organization, one that involves a lot of moving parts. This page contains snapshots of some of the projects I've been a part of."
 ---
 
 <div class="project-sub-head">
@@ -23,4 +23,15 @@ projectDescription: "As a product designer on the Outlook Web client, I've worke
 ![Mobile and tablet](./renders/mobile-and-tablet.jpg)
 
 ![Mobile and tablet](./renders/desktop-1.png)
+
+<div class="project-sub-head">
+    <h4 class="project-sub-title">
+        Loading Animation
+    </h4>
+    <h4 class="project-description">
+        After wanting to learn more about animation, I took it upon myself to explore how we might create a loading animation for Outlook. Motion has the amazing ability to change perception of time. With this, I was aiming to make the app feel more agile on boot. 
+    </h4>
+</div>
+
+![Loading animation](./outlook-loading.gif)
 

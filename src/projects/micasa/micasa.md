@@ -5,7 +5,7 @@ title: "Micasa"
 tags: "Product, Illustration, Branding"
 projectImage: "./micasa.png"
 projectImageAltTag: "Illustration"
-projectSubTitle: "Micasa is personal property management solution. I was the sole designer tasked with delivering everything including branding, illustrations, iconography, UX and UI."
+projectSubTitle: "Micasa is service that helps you manage your home. I was the sole designer asked to deliver branding, illustrations, iconography, UX and UI."
 projectDescription: "The product is centered around the goal of helping home-owners keep their homes maintained. Either on their own, or by being connected to agents through the platform. Owning a home is no simple task - Micasa wants to make this simpler."
 ---
 
@@ -14,11 +14,13 @@ projectDescription: "The product is centered around the goal of helping home-own
         Branding
     </h4>
     <h4 class="project-description">
-        Micasa's mission statement is 'to help people keep their home in shape'. Following this, I started to play off shapes that included metaphors for the home and health, incorporating them in as many ways as I could. You can see some of those explorations here. 
+        Micasa's mission is to help people keep their home in shape. Following this, for the branding I started to play off shapes that included metaphors for the home and health, incorporating them in as many ways as I could.
     </h4>
 </div>
 
 ![Logo explore](./logo-explore.png)
+
+![Logo final](./micasa.png)
 
 
 <div class="project-sub-head">
@@ -26,7 +28,7 @@ projectDescription: "The product is centered around the goal of helping home-own
         Illustrations
     </h4>
     <h4 class="project-description">
-        Owning a home is a pretty daunting task, one which can come with a lot of complexity. With the illustrations, I wanted to execute a style that was simple and approachable. 
+        Owning a home is a pretty daunting task, one which can come with a lot of complexity. With illustration I aimed to make the task seem more approachable, through a simple and clean style. 
     </h4>
 </div>
 

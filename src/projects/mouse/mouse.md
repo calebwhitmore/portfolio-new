@@ -3,10 +3,10 @@ path: "/project/mariner-interiors"
 date: "2020-01-01"
 title: "Mouse redesign"
 tags: "industrial"
-projectImage: "./mouse.png"
+projectImage: "./mouse2.png"
 projectImageAltTag: "Illustration"
-projectSubTitle: "A redesign of the standard computer mouse"
-projectDescription: "We use computer mouses everyday - so why not redesign one?"
+projectSubTitle: "A computer mouse design that incorporates a novel way to scroll"
+projectDescription: "How many times does the average person click on their computer mouse a day? How many pixels do they move across their screen? How far do they scroll? Our computer mice get used a hell of a lot. Acknowledging this, I couldn't help but recognize a huge opportunity for impact. If you can make any type of small incremental improvement to a computer mouse, it would equal a huge amount of value over it's lifetime."
 ---
 
 ![Top view](./top-view.png)

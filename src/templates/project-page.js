@@ -23,7 +23,7 @@ class ProjectPageTemplate extends React.Component {
             <h2 className="page-title">
               {project.frontmatter.title}
               <br />
-              {project.frontmatter.tags}
+              <span>{project.frontmatter.tags}</span>
             </h2>
             <div className="project-sub-head">
               <h4 className="project-sub-title">
@@ -33,11 +33,6 @@ class ProjectPageTemplate extends React.Component {
                 {project.frontmatter.projectDescription}
               </h4>
             </div>
-            <Img
-              className="project-header-image"
-              fluid={project.frontmatter.projectImage.childImageSharp.fluid}
-              alt={project.frontmatter.projectImageAltTag}
-            />
             <div
               className="project-open-content"
               dangerouslySetInnerHTML={{ __html: project.html }}

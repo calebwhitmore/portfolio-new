@@ -22,30 +22,36 @@
   .menu-item {
     margin: var(--spacing) 0;
     flex: 0 0 auto;
-    transition:0.3s all ease;
+    transition: 0.3s all ease;
   }
   .mobile-menu-toggle {
-    display:none;
-    opacity:0;
-    transition:0.2s all ease;
+    display: none;
+    opacity: 0;
+    transition: 0.2s all ease;
 
-    .bar-1, .bar-2, .bar-3 {
-      transition:0.2s all ease;
+    .bar-1,
+    .bar-2,
+    .bar-3 {
+      transition: 0.2s all ease;
     }
   }
   .title {
+    margin: var(--spacing) 0;
+    border-radius: var(--border-radius);
     h1 {
       transition: 0.3s all ease;
       font-variation-settings: "wdth" 20, "wght" 600;
       color: var(--darkest);
     }
     &:focus {
-      outline: none;
-      box-shadow:0px 0px 0px 4px var(--black);
+      outline:none;
+      h1 {
+        font-variation-settings: "wdth" 20, "wght" 800;
+      }
     }
   }
   .navigation {
-    margin-top:0px;
+    margin-top: 0px;
   }
 
   .dark-mode-toggle {
@@ -61,7 +67,7 @@
       cursor: pointer;
       &:focus {
         outline: none;
-        box-shadow:0px 0px 0px 4px var(--black);
+        box-shadow: 0px 0px 0px 4px var(--black);
       }
 
       &:hover {
@@ -82,7 +88,6 @@
         border-radius: calc(var(--toggle-size) / 2);
         margin: 0px;
         position: relative;
-        
       }
 
       .dark-mode-on {
@@ -128,10 +133,8 @@
   }
   .navigation {
     flex: 1 1 auto;
-    border-top:1px solid var(--lighter);
     .link {
       background-color: transparent;
-      border-bottom:1px solid var(--lighter);
       width: 100%;
       display: block;
       transition: 0.3s all ease;
@@ -139,42 +142,35 @@
       align-items: center;
       justify-content: center;
       flex: 1 1 auto;
-      padding:0px;
-
+      padding: 0px;
+      border-radius: 12px;
+      margin: calc(var(--spacing) / 4) 0px;
+      cursor: pointer;
       h3 {
         flex: 1 1 auto;
         align-content: flex-end;
         text-align: left;
-        color: var(--dark);
-        padding: calc(var(--spacing) / 2) 0px;
+        color: var(--darker);
+        padding: 0px;
         text-decoration: none;
         transition: 0.3s all ease;
+        font-variation-settings: "wdth" 75, "wght" 400;
       }
 
       &:hover {
-        background-color: var(--lightest);
-        h3 {
-          color: var(--darker);
-          padding: calc(var(--spacing) / 2);
-        }
-      }
-
-      &:active {
-        background-color: var(--lighter);
-        box-shadow:0px 0px 0px 4px var(--black);
-
         h3 {
           color: var(--darkest);
-          padding: calc(var(--spacing) / 2);
+          margin: 0px 0px;
+          font-variation-settings: "wdth" 75, "wght" 800;
         }
       }
 
-      &:focus {
+      &:active, &:focus {
         outline: none;
-        box-shadow:0px 0px 0px 4px var(--black);
+
         h3 {
-          color: var(--black);
-          padding: calc(var(--spacing) / 2);
+          color:var(--darkest);
+          font-variation-settings: "wdth" 75, "wght" 800;
         }
       }
     }
@@ -187,7 +183,7 @@
 @media only screen and (max-width: 600px) {
   .menu {
     top: 0px;
-    padding: var(--spacing);
+    padding: calc(var(--spacing) / 2) var(--spacing);
     z-index: 4;
     width: 100%;
     transform: translate(0px);
@@ -195,24 +191,25 @@
     background-color: var(--white-overlay-98);
     backdrop-filter: blur(8px);
     grid-template-columns: 1fr;
-    height:auto;
-    transition:0.3s all ease;
-    max-height:110px;
+    height: auto;
+    transition: 0.3s all ease;
+    max-height: 80px;
     overflow: hidden;
+    box-shadow: 0px 0px 0px 1px var(--lighter);
 
     .mobile-menu-toggle {
-      background-color:transparent;
-      display:block;
+      background-color: transparent;
+      display: block;
       width: 52px;
       height: 52px;
-      top: 32px;
-      right:var(--spacing);
-      border-radius: 4px;
-      padding:8px;
-      position:fixed;
-      z-index:1000;
-      opacity:1;
-      cursor:pointer;
+      top: 15px;
+      right: var(--spacing);
+      border-radius: var(--border-radius);
+      padding: 8px;
+      position: fixed;
+      z-index: 1000;
+      opacity: 1;
+      cursor: pointer;
 
       .bar-1,
       .bar-2,
@@ -238,27 +235,63 @@
         background-color: var(--lighter);
       }
     }
-    .navigation, .dark-mode-toggle, .footer {
-      flex:0 0 0px;
-      margin:0px;
-      opacity:0;
+    .navigation,
+    .dark-mode-toggle,
+    .footer {
+      flex: 0 0 0px;
+      margin: 0px;
+      opacity: 0;
       pointer-events: none;
+    }
+    .menu-items {
+      .title {
+        width: calc(100% - 80px);
+        margin: calc(var(--spacing) / 2) 0px;
+        h1 {
+          margin: 0px;
+        }
+        &:hover {
+          background-color: transparent;
+          margin: calc(var(--spacing) / 2) 0px;
+          h1 {
+            margin: 0px;
+          }
+        }
+      }
+      .navigation {
+        display: flex;
+        flex-direction: column;
+        .link {
+          flex: 0 0 auto;
+          margin: calc(var(--spacing) / 2) 0px;
+          background-color: var(--lightest);
+          h3 {
+            padding: calc(var(--spacing) / 2);
+            text-align: center;
+          }
+          &:hover {
+            background-color: var(--lighter);
+          }
+        }
+      }
     }
   }
   .open {
     justify-content: center;
-    max-height:100%;
+    max-height: 100%;
     box-shadow: 0px 0px 100px 10000px var(--black-overlay-40);
 
-    .navigation, .dark-mode-toggle, .footer {
-      flex:0 0 auto;
+    .navigation,
+    .dark-mode-toggle,
+    .footer {
+      flex: 0 0 auto;
       margin: var(--spacing) 0;
-      opacity:1;
+      opacity: 1;
       pointer-events: auto;
     }
 
     .mobile-menu-toggle {
-      background-color:var(--lightest);
+      background-color: var(--lightest);
 
       .bar-1 {
         transform: translate(0px, 3px) rotate(-45deg);
@@ -275,7 +308,7 @@
         transform-origin: center;
       }
       &:hover {
-        background-color:var(--lighter);
+        background-color: var(--lighter);
       }
 
       &:active {

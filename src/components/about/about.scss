@@ -10,14 +10,16 @@
   z-index: 100;
   top: 0px;
   left: 0px;
+  backdrop-filter: blur(8px);
 
   animation: fade 0.3s forwards ease;
 }
 
 .aboutContainer {
-  max-width: 800px;
+  max-width: 600px;
   width: auto;
   background-color: var(--white);
+  backdrop-filter: blur(100px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,9 +43,21 @@
       transform: translate(0px, -40px);
     }
   }
-  p {
+  h4 {
     margin-top: 40px;
-    font-size: 16px;
+    font-size: 14px;
+    color:var(--darkest);
+    font-variation-settings: "wdth" 75, "wght" 400;
+    span {
+      font-variation-settings: "wdth" 75, "wght" 600;
+    }
+  }
+
+  p {
+    margin-top:20px;
+    font-size: 14px;
+    color:var(--darkest);
+    font-variation-settings: "wdth" 75, "wght" 400;
   }
 
   .close {

@@ -1,12 +1,12 @@
 ---
-path: "/project/icons-calendar"
+path: "/project/icons"
 date: "2020-04-01"
 title: "Design icons"
 tags: "Illustration, Graphic design"
 projectImage: "./vector.png"
 projectImageAltTag: "Illustration"
-projectSubTitle: "This is a running project, which pays tribute to some of my favourite designs"
-projectDescription: "This is a running project, which pays tribute to some of my favourite designs in a style that's bold, simple, and distills each object into it's core visual form. Expect additions to be made as I go - and let me know if you have any requests or personal favourites yourself. "
+projectSubTitle: "This project pays tribute to designs that I believe to be truly iconic."
+projectDescription: "I've tried to distill each objects form down into a style that's bold, simple, and captures each object by their core visual elements. With objects ranging from Aesop handwash to the Porsche 911." 
 ---
 
 ![Braun ET66](./braun-et66.png)

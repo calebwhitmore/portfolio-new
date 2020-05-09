@@ -11,7 +11,7 @@ const IndexPage = () => {
         <h2 className="page-title">
                 Product designer
                 <br />
-                Based in Seattle
+                <span>Based in Seattle</span>
               </h2>
         <Projects />
     </Layout>

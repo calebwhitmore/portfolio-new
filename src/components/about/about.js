@@ -14,10 +14,14 @@ const About = (props) => {
       <div className="headshot">
         <img src={headshot} alt='Headshot of Caleb'></img>
       </div>
-      <p>
-        Caleb Whitmore is a multi-disciplinary designer with an appetite to
-        learn.
-      </p>
+      <h4>
+        <span>Caleb Whitmore </span>is a Product Designer from the UK. Born in 1993, he grew up in the town of Southampton. He graduated from Brunel University in 2016 with a degree in Product design and is currently employed at Microsoft, living in Seattle. He refuses to move to Redmond. 
+      <br/><br/>
+      He has an insatiable appetite for growth. His past has given him experience in a wide array of practices and skills across design. 
+      <br/><br/>
+      His passion lies at the intersection of hardware and software. 
+      
+      </h4>
     </div>
     </div>
   )

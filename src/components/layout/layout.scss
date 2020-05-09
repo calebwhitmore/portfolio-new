@@ -27,6 +27,16 @@ body {
     grid-row: 1;
     padding: var(--spacing) 0px;
   }
+
+  .page-title {
+    font-variation-settings: "wdth" 75, "wght" 500;
+    color:var(--darkest);
+
+    span {
+      color:var(--darkest);
+      font-variation-settings: "wdth" 75, "wght" 300;
+    }
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -41,6 +51,11 @@ body {
 @media only screen and (max-width: 600px) {
   .page-container {
     grid-template-columns: 1fr;
+    .page {
+      .page-title {
+        display:none;
+      }
+    }
   }
 }
 
