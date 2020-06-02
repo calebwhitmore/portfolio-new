@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Menu from "../menu/menu"
+import Header from "../header/header"
 import About from "../about/about"
 import "./layout.scss"
 
@@ -41,10 +41,14 @@ class Layout extends React.Component {
   render(props) {
     return (
       <div className="page-container">
-        <Menu
+        <Header
           toggleDarkMode={this.toggleDarkMode}
           darkMode={this.state.darkMode}
           openAbout={this.toggleAbout}
+          pageTitleLine1={this.props.pageTitleLine1}
+          pageTitleLine2={this.props.pageTitleLine2}
+          tags={this.props.tags}
+          showBack={this.props.showBack}
         />
         <div className="page">
           {this.props.children}

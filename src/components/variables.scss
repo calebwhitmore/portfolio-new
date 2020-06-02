@@ -22,10 +22,10 @@
 
   --theme-1: #0064ea;
 
-  --toggle-size: 40px;
+  --toggle-size: 52px;
 
   --spacing: 2rem;
-  --max-width: 1200px;
+  --max-width: 1000px;
   --grid-template-columns-3: 2fr 4fr 4fr;
   --grid-template-columns-2: repeat(2, 1fr);
   --grid-template-columns-1: 1fr;
@@ -80,7 +80,7 @@
   --white-overlay-98: rgba(0, 0, 0, 0.8);
   --black-overlay-40: rgba(100, 100, 100, 0.40);
   --black-overlay-80: rgba(100, 100, 100, 0.80);
-  --black-overlay-12: rgba(100, 100, 100, 0.12);
+  --black-overlay-12: rgba(100, 100, 100, 0.40);
 }
 
 body {
@@ -110,8 +110,8 @@ div {
   font-family: "Inter variable font", sans-serif;
 }
 h1 {
-  font-size: var(--font-size-m);
-  line-height: var(--font-size-m);
+  font-size: var(--font-size-l);
+  line-height: var(--font-size-l);
 }
 h2 {
   font-size: var(--font-size-s);

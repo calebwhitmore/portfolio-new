@@ -5,6 +5,8 @@ title: "Viewfinder"
 tags: "Industrial design, Product design"
 projectImage: "./camera-detail-viewfinder.png"
 projectSubTitle: "A design for a simpler camera"
+headerImage: "./hero-render.png"
+headerImageAltTag: "A angled view of the camera"
 projectDescription: "The goal of this project is to create a camera concept where the hardware and software are designed holistically. There are a couple of problems with most cameras out there today that I wanted to focus on. How might we ease the learning curve required for many proffessional-grade cameras today? How might we give people more ownership of the images that they take? How might we create a more succinct overlap in the way that hardware and software in cameras interact today? These are all questions that I aimed to provide one answer to."
 projectImageAltTag: "Detail shot of the camera viewfinder"
 ---

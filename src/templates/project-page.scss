@@ -25,13 +25,17 @@
     background-color: var(--lightest);
     box-shadow: none;
     transition: 0.3s all ease;
-    box-shadow: 0px 0px 0px 1px var(--lightest);
     margin: calc(var(--spacing) * 2) 0px;
 
     &:focus {
       outline: none;
       box-shadow: 0px 0px 0px 4px var(--black);
     }
+  }
+
+  .project-header-image {
+    background-color: transparent;
+    margin: 0px;
   }
   img {
     width: 100%;
@@ -152,9 +156,10 @@
         background-color: var(--lightest);
         padding: var(--spacing);
         h4 {
-          color: var(--neutral-dark);
+          color: var(--darkest);
           font-variation-settings: "wdth" 20, "wght" 800;
           span {
+            color: var(--darkest);
             font-variation-settings: "wdth" 20, "wght" 400;
           }
         }

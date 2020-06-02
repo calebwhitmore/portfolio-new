@@ -16,15 +16,22 @@ class ProjectPageTemplate extends React.Component {
     const { previous, next } = this.props.pageContext
 
     return (
-      <Layout location={this.props.location} title={siteTitle} id={2}>
+      <Layout
+        location={this.props.location}
+        title={siteTitle}
+        id={2}
+        pageTitleLine1={project.frontmatter.title}
+        tags={project.frontmatter.tags}
+        showBack={true}
+      >
         <SEO title={project.frontmatter.title} description={project.excerpt} />
         <div className="project-page-container">
           <div className="project-page">
-            <h2 className="page-title">
-              {project.frontmatter.title}
-              <br />
-              <span>{project.frontmatter.tags}</span>
-            </h2>
+            <Img
+              className="project-header-image"
+              fluid={project.frontmatter.headerImage.childImageSharp.fluid}
+              alt={project.frontmatter.headerImageAltTag}
+            />
             <div className="project-sub-head">
               <h4 className="project-sub-title">
                 {project.frontmatter.projectSubTitle}
@@ -88,8 +95,8 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         tags
-        projectImageAltTag
-        projectImage {
+        headerImageAltTag
+        headerImage {
           childImageSharp {
             fluid(maxWidth: 1200, quality: 100) {
               ...GatsbyImageSharpFluid
