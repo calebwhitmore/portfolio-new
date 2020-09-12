@@ -5,8 +5,10 @@ title: "Outlook"
 tags: "Product Design"
 projectImage: "./outlook-logo.png"
 projectImageAltTag: "Illustration"
-projectSubTitle: "I am currently a product designer at Outlook, Microsofts email client."
-projectDescription: "As a product designer on the Outlook Web client, I've worked on as huge range of projects across it's ecosystem. It's taught me how to work efficiently inside a large organization, one that involves a lot of moving parts. This page contains snapshots of some of the projects I've been a part of."
+projectSubTitle: "I am currently a Senior Product Designer at Outlook, Microsofts email client, focused on communications and triage."
+headerImage: "./outlook-logo.png"
+headerImageAltTag: "Outlook Logo"
+projectDescription: "I've worked on a range of projects across it's ecosystem, from tasks integration to command bar customization and the message list. It's taught me how to work effectively inside a large organization, one that involves a lot of moving parts. This page contains snapshots of some of the projects I've been a part of."
 ---
 
 <div class="project-sub-head">
