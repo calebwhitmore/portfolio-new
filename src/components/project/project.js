@@ -9,7 +9,7 @@ export default function Project(props) {
     <Link to={props.project.fields.slug} className="project-container">
       <div className="project">
         <div className="projectTileText">
-          <h3>{props.project.frontmatter.title}</h3>
+          <h3 className="serif">{props.project.frontmatter.title}</h3>
           <h4>{props.project.frontmatter.tags}</h4>
         </div>
         <Img
