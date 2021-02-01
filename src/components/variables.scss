@@ -1,8 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 
 @font-face {
   font-family: "Inter variable font";
   src: url("../assets/Inter.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("../assets/Fraunces.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fraunces Italic";
+  src: url("../assets/Fraunces-Italic.ttf") format("truetype");
 }
 
 :root {
@@ -15,10 +24,11 @@
   --lightest: rgba(0, 0, 0, 0.08);
   --white: #ffffff;
 
+  --black-overlay-08: rgba(0, 0, 0, 0.08);
   --black-overlay-12: rgba(0, 0, 0, 0.12);
   --black-overlay-40: rgba(0, 0, 0, 0.4);
   --black-overlay-80: rgba(0, 0, 0, 0.80);
-  --white-overlay-98: rgba(255, 255, 255, 0.8);
+  --white-overlay-98: rgba(215, 215, 215, 0.8);
 
   --theme-1: #0064ea;
 
@@ -26,12 +36,17 @@
 
   --spacing: 2rem;
   --max-width: 1000px;
+<<<<<<< HEAD
+  --grid-template-columns-3: 4fr 4fr 4fr;
+=======
   --grid-template-columns-3: 2fr 4fr 4fr;
+>>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
   --grid-template-columns-2: repeat(2, 1fr);
   --grid-template-columns-1: 1fr;
 
+  --font-size-xxl: 80px;
   --font-size-xl: 60px;
-  --font-size-l: 40px;
+  --font-size-l: 48px;
   --font-size-m: 32px;
   --font-size-s: 24px;
   --font-size-xs: 16px;
@@ -39,19 +54,21 @@
   font-family: "Inter variable font", sans-serif;
   font-variation-settings: "wdth" 20, "wght" 600;
 
-  --border-radius:10px;
+  --border-radius-small:10px;
+  --border-radius-large:20px;
+  --box-shadow-1:0px 2px 8px 0px var(--black-overlay-08);
 }
 
 @media only screen and (max-width: 1000px) {
   :root {
     --grid-template-columns-3: 3fr 7fr;
     --grid-template-columns-2: 1fr;
-    --spacing: 1.4rem;
+    --spacing: 2.4rem;
 
-    --font-size-xl: 32px;
-    --font-size-l: 32px;
-    --font-size-m: 28px;
-    --font-size-s: 24px;
+    --font-size-xl: 40px;
+    --font-size-l: 28px;
+    --font-size-m: 24px;
+    --font-size-s: 20px;
     --font-size-xs: 16px;
   }
 }
@@ -59,9 +76,9 @@
 @media only screen and (max-width: 600px) {
   :root {
     --grid-template-columns: 1;
-    --spacing: 1rem;
+    --spacing: 2rem;
 
-    --font-size-xl: 32px;
+    --font-size-xl: 40px;
     --font-size-l: 28px;
     --font-size-m: 24px;
     --font-size-s: 20px;
@@ -77,14 +94,25 @@
   --lighter: rgba(255,255,255, 0.24);
   --lightest: rgba(255,255,255, 0.18);
   --white: #000000;
-  --white-overlay-98: rgba(0, 0, 0, 0.8);
+  --white-overlay-98: rgba(20, 20, 20, 0.8);
   --black-overlay-40: rgba(100, 100, 100, 0.40);
   --black-overlay-80: rgba(100, 100, 100, 0.80);
   --black-overlay-12: rgba(100, 100, 100, 0.40);
+<<<<<<< HEAD
+
+  .icon {
+    filter: invert(1);
+  }
+=======
+>>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
 }
 
 body {
   margin: 0 var(--spacing);
+  overflow: visible;
+}
+html {
+  overflow: visible;
 }
 
 * {
@@ -110,11 +138,18 @@ div {
   font-family: "Inter variable font", sans-serif;
 }
 h1 {
+<<<<<<< HEAD
+  font-size: var(--font-size-xl);
+  line-height: var(--font-size-xxl);
+  font-variation-settings: "wdth" 75, "wght" 400;
+  
+=======
   font-size: var(--font-size-l);
   line-height: var(--font-size-l);
+>>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
 }
 h2 {
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-m);
   line-height: var(--font-size-m);
   font-variation-settings: "wdth" 75, "wght" 400;
   color: var(--darker);
@@ -122,10 +157,11 @@ h2 {
 }
 
 h3 {
-  font-size: var(--font-size-s);
-  line-height: var(--font-size-m);
-  font-weight: 400;
-  color: var(--dark);
+    color:var(--dark);
+    font-variation-settings: "wdth" 75, "wght" 300;
+    font-size: var(--font-size-s);
+    line-height: var(--font-size-s);
+    letter-spacing: -0.4px;
 }
 
 h4 {
@@ -151,6 +187,12 @@ h1 a {
 a {
   color: var(--darkest);
   text-decoration: none;
+}
+
+.serif{
+  font-family:'Fraunces';
+  font-size:var(--font-size-l);
+  line-height:var(--font-size-xl);
 }
 
 @keyframes fadeUp {

@@ -8,7 +8,7 @@
 
 .project-container {
   @include transition;
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-small);
   overflow: hidden;
   transition: 0.3s all ease;
   opacity: 0;
@@ -84,7 +84,11 @@
     width: auto;
     height: 100%;
     z-index: 1;
+    img {
+      margin:0px;
+    }
   }
+
   h3,
   h4 {
     width: 100%;

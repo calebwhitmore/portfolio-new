@@ -16,10 +16,16 @@ body {
   max-width: var(--max-width);
   margin: 0 auto;
   height: 100%;
+<<<<<<< HEAD
+  position:static;
+  grid-gap: var(--spacing);
+  margin: calc(var(--spacing) / 2) auto;
+=======
   display: grid;
   grid-gap: var(--spacing);
   margin-bottom: var(--spacing);
   margin-top: var(--spacing);
+>>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
   grid-template-columns: 1fr 1fr;
 
   h2 {
@@ -37,6 +43,10 @@ body {
       color:var(--darkest);
       font-variation-settings: "wdth" 75, "wght" 300;
     }
+  }
+
+  .home-title {
+    margin-bottom:calc(var(--spacing) * 3);
   }
 }
 
