@@ -6,6 +6,7 @@
   grid-column-start: 1;
   grid-column-end: 3;
   grid-gap: var(--spacing);
+<<<<<<< HEAD
   background-color:transparent;
   padding:12px;
   margin:12px 0px;
@@ -42,6 +43,11 @@
 
   .header-item {
     margin: 0;
+=======
+
+  .header-item {
+    margin: var(--spacing) 0 0 0;
+>>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
     flex: 0 0 auto;
     display: flex;
     transition: 0.3s all ease;
@@ -49,6 +55,7 @@
 
     .topLeft {
       display: flex;
+<<<<<<< HEAD
       flex: 1 0 0px;
       flex-direction: column;
     }
@@ -65,11 +72,21 @@
       background-color: var(--black-overlay-08);
     };
   }
+=======
+      flex: 1 0 auto;
+      flex-direction: column;
+    }
+  }
+>>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
   .arrow {
     flex: 0 0 52px;
     width: 120px;
     height: 52px;
+<<<<<<< HEAD
     border-radius: var(--border-radius-small);
+=======
+    border-radius: var(--border-radius);
+>>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
     margin: 0px var(--spacing) var(--spacing) 0px;
     border-radius: 40px;
     position: relative;
@@ -132,6 +149,7 @@
     }
   }
   .title {
+<<<<<<< HEAD
     display:flex;
     position:relative;
     animation: fadeUp 0.6s ease forwards;
@@ -148,21 +166,38 @@
         background-color: var(--light);
       }
     }
+=======
+>>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
     h1 {
       transition: 0.3s all ease;
       font-variation-settings: "wdth" 20, "wght" 600;
       color: var(--darkest);
       width: 100%;
     }
+<<<<<<< HEAD
     h3 {
       margin:var(--spacing) 0;
+=======
+    h2 {
+      padding-top: 10px;
+      color: var(--dark);
+      font-variation-settings: "wdth" 20, "wght" 300;
+>>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
     }
   }
 
   .dark-mode-toggle {
+<<<<<<< HEAD
     flex: 1 0;
     display: flex;
     flex-direction: row-reverse;
+=======
+    width: 80px;
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: var(--spacing);
+>>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
     .toggle-contain {
       width: calc(var(--toggle-size) * 2);
       border-radius: calc(var(--toggle-size) / 2);
@@ -174,7 +209,11 @@
       cursor: pointer;
       &:focus {
         outline: none;
+<<<<<<< HEAD
         background-color: var(--lighter);
+=======
+        box-shadow: 0px 0px 0px 4px var(--black);
+>>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
       }
 
       &:hover {
@@ -182,6 +221,7 @@
         .toggle {
           transition: 0.2s all ease;
         }
+<<<<<<< HEAD
       }
       &:active {
         .selection {
@@ -192,15 +232,26 @@
           .selection{
           transform: translate(calc(var(--toggle-size) - 10px), 0px);
           }
+=======
+
+        .sun,
+        .moon {
+          padding: calc(var(--toggle-size) / 6);
+>>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
         }
       }
 
       .toggle {
+<<<<<<< HEAD
         width: 100%;
+=======
+        width: var(--toggle-size);
+>>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
         height: var(--toggle-size);
         border-radius: calc(var(--toggle-size) / 2);
         margin: 0px;
         position: relative;
+<<<<<<< HEAD
         padding:4px;
       }
 
@@ -223,20 +274,41 @@
         border-radius: 22px;
         transition:0.1s all ease;
         transform: translate(0px, 0px);
+=======
+      }
+
+      .dark-mode-on {
+        transform: translate(var(--toggle-size), 0px);
+        .sun {
+          opacity: 0;
+        }
+        .moon {
+          opacity: 1;
+        }
+>>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
       }
 
       .sun,
       .moon {
+<<<<<<< HEAD
         width: 52px;
+=======
+        width: 100%;
+>>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
         padding: calc(var(--toggle-size) / 4);
         border-radius: 40px;
         overflow: hidden;
         position: absolute;
         z-index: 2;
+<<<<<<< HEAD
         top:0px;
         transition: 0.1s all ease-out;
         font-size: 28px;
         color:black;
+=======
+        top: 0;
+        transition: 0.1s all ease-out;
+>>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
       }
 
       .sun {
@@ -246,7 +318,11 @@
 
       .moon {
         right: 0px;
+<<<<<<< HEAD
         opacity: 0.4;
+=======
+        opacity: 0;
+>>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
       }
     }
   }
@@ -255,7 +331,11 @@
     background-color: transparent;
     width: 60px;
     height: 52px;
+<<<<<<< HEAD
     border-radius: var(--border-radius-small);
+=======
+    border-radius: var(--border-radius);
+>>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
     padding: 8px;
     opacity: 1;
     cursor: pointer;
@@ -312,6 +392,10 @@
 }
 
 .header {
+<<<<<<< HEAD
+=======
+  position: relative;
+>>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
   .navigation {
     position: absolute;
     right: 0px;
@@ -411,6 +495,7 @@
   }
 }
 
+<<<<<<< HEAD
 @media only screen and (max-width: 1000px) {
   .header {
     .title {
@@ -422,11 +507,17 @@
   }
 }
 
+=======
+>>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
 @media only screen and (max-width: 600px) {
   .header {
     .navigation {
       max-width: none;
+<<<<<<< HEAD
       width: calc(100vw - (var(--spacing)));
+=======
+      width: 100vw;
+>>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
       right: calc(0px - (var(--spacing)));
       margin: 0px;
       border-radius: 0px;
@@ -437,12 +528,15 @@
         }
       }
     }
+<<<<<<< HEAD
     .title {
       img {
         width:58px;
         height:58px;
       }
     }
+=======
+>>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
   }
   .header.open {
     .navigation {

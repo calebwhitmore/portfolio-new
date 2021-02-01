@@ -32,6 +32,17 @@ class ProjectPageTemplate extends React.Component {
               fluid={project.frontmatter.headerImage.childImageSharp.fluid}
               alt={project.frontmatter.headerImageAltTag}
             />
+<<<<<<< HEAD
+=======
+            <div className="project-sub-head">
+              <h4 className="project-sub-title">
+                {project.frontmatter.projectSubTitle}
+              </h4>
+              <h4 className="project-description">
+                {project.frontmatter.projectDescription}
+              </h4>
+            </div>
+>>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
             <div
               className="project-open-content"
               dangerouslySetInnerHTML={{ __html: project.html }}

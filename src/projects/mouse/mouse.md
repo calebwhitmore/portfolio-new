@@ -7,6 +7,11 @@ projectImage: "./mouse-thumbnail.png"
 projectImageAltTag: "Illustration"
 headerImage: "./side-view.png"
 headerImageAltTag: "A angled view of the mouse"
+<<<<<<< HEAD
+=======
+projectSubTitle: "A computer mouse design that incorporates a novel way to scroll"
+projectDescription: "How many times does the average person click on their computer mouse a day? How many pixels do they move across their screen? How far do they scroll? Our computer mice get used a hell of a lot. Acknowledging this, I couldn't help but recognize a huge opportunity for impact. If you can make any type of small incremental improvement to a computer mouse, it would equal a huge amount of value over it's lifetime."
+>>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
 ---
 
 <div class="project-sub-head">

@@ -36,7 +36,11 @@
 
   --spacing: 2rem;
   --max-width: 1000px;
+<<<<<<< HEAD
   --grid-template-columns-3: 4fr 4fr 4fr;
+=======
+  --grid-template-columns-3: 2fr 4fr 4fr;
+>>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
   --grid-template-columns-2: repeat(2, 1fr);
   --grid-template-columns-1: 1fr;
 
@@ -94,10 +98,13 @@
   --black-overlay-40: rgba(100, 100, 100, 0.40);
   --black-overlay-80: rgba(100, 100, 100, 0.80);
   --black-overlay-12: rgba(100, 100, 100, 0.40);
+<<<<<<< HEAD
 
   .icon {
     filter: invert(1);
   }
+=======
+>>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
 }
 
 body {
@@ -131,10 +138,15 @@ div {
   font-family: "Inter variable font", sans-serif;
 }
 h1 {
+<<<<<<< HEAD
   font-size: var(--font-size-xl);
   line-height: var(--font-size-xxl);
   font-variation-settings: "wdth" 75, "wght" 400;
   
+=======
+  font-size: var(--font-size-l);
+  line-height: var(--font-size-l);
+>>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
 }
 h2 {
   font-size: var(--font-size-m);

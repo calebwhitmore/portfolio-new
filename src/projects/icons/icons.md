@@ -5,8 +5,13 @@ title: "Design icons"
 tags: "Illustration, Graphic design"
 projectImage: "./icon-thumbnail.png"
 projectImageAltTag: "Illustration"
+<<<<<<< HEAD
 headerImage: "./vector.png"
 headerImageAltTag: "Illustration vector"
+=======
+projectSubTitle: "This project pays tribute to designs that I think are truly iconic, mainly due to their form."
+projectDescription: "I've tried to distill each objects form down into a style that's bold, simple, and captures each object by their core visual elements. With objects ranging from Aesop handwash to the Porsche 911." 
+>>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
 ---
 
 <div class="project-sub-head">

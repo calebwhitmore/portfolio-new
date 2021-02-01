@@ -3,10 +3,19 @@ path: "/project/micasa"
 date: "2020-03-01"
 title: "Micasa"
 tags: "Product, Illustration, Branding"
+<<<<<<< HEAD
 projectImage: "././house.png"
 headerImage: "./logo-large.png"
 projectImageAltTag: "Illustration"
 headerImageAltTag: "Illustration"
+=======
+projectImage: "./micasa.png"
+headerImage: "./micasa.png"
+projectImageAltTag: "Illustration"
+headerImageAltTag: "Illustration"
+projectSubTitle: "Micasa is service that helps you manage your home. I was the sole designer asked to deliver branding, illustrations, iconography, UX and UI."
+projectDescription: "The product is centered around the goal of helping home-owners keep their homes maintained. Either on their own, or by being connected to agents through the platform. Owning a home is no simple task - Micasa wants to make this simpler."
+>>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
 ---
 
 <div class="project-sub-head">
