@@ -25,21 +25,15 @@
     background-color: var(--lightest);
     box-shadow: none;
     transition: 0.3s all ease;
-<<<<<<< HEAD
     margin: 0px 0px calc(var(--spacing) * 2) 0px;
     box-shadow: 0px 0px 0px 1px var(--lightest);
     border-radius: var(--border-radius-small);
     overflow: hidden;
-=======
-    margin: calc(var(--spacing) * 2) 0px;
->>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
-
     &:focus {
       outline: none;
       box-shadow: 0px 0px 0px 4px var(--black);
     }
   }
-<<<<<<< HEAD
   .project-header-image img {
     margin:0px;
     background-color: var(--lightest);
@@ -49,12 +43,6 @@
     background-color: transparent;
     margin-top: 0px;
     box-shadow: none;
-=======
-
-  .project-header-image {
-    background-color: transparent;
-    margin: 0px;
->>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
   }
   img {
     width: 100%;

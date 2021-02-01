@@ -2,14 +2,9 @@ import { Link } from "gatsby"
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 
-<<<<<<< HEAD
 import sun from "../../images/icons/sun.svg"
 import moon from "../../images/icons/moon.svg"
 import headshot from "../../images/headshot.png"
-=======
-import sun from "../../images/sun.png"
-import moon from "../../images/moon.png"
->>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
 
 import "./header.scss"
 
@@ -32,7 +27,6 @@ class Header extends React.Component {
     return (
       <div className={"header " + (this.state.open ? "open " : " ")}>
         <div className="header-item">
-<<<<<<< HEAD
             <button
             className="nav-link">
               <p>Home</p>
@@ -62,7 +56,6 @@ class Header extends React.Component {
               
             </div>
           {/* <button className="menu-toggle" onClick={this.toggleMenu}>
-=======
           <div className="topLeft">
             {this.props.showBack ? (
               <Link to="./" className="arrow">
@@ -115,7 +108,6 @@ class Header extends React.Component {
             <div className="bar-2" />
             <div className="bar-3" />
           </button>
-<<<<<<< HEAD
 
 =======
           
@@ -133,7 +125,6 @@ class Header extends React.Component {
             <a className="link" href="http://www.panop.co">
               <h3>Blog</h3>
             </a>
-<<<<<<< HEAD
           </div> 
           
           <div className="dark-mode-toggle">
@@ -165,11 +156,9 @@ class Header extends React.Component {
           
           */
           }
-=======
           </div>
->>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
+
         </div>
-      </div>
     )
   }
 }

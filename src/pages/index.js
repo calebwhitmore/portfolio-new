@@ -9,7 +9,6 @@ import earth from "../images/icons/earth.svg"
 
 const IndexPage = () => {
   return (
-<<<<<<< HEAD
     <Layout id={1} >
         <SEO title="Home" />
         <div className="intro">
@@ -19,10 +18,6 @@ const IndexPage = () => {
         <h3>Located in Seattle, WA</h3>
         </div>
         </div>
-=======
-    <Layout id={1} pageTitleLine1={'Caleb'} pageTitleLine2={'Whitmore'}>
-        <SEO title="Home" />
->>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
         <Projects />
     </Layout>
   )

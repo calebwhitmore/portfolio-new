@@ -16,16 +16,10 @@ body {
   max-width: var(--max-width);
   margin: 0 auto;
   height: 100%;
-<<<<<<< HEAD
+  display:grid;
   position:static;
   grid-gap: var(--spacing);
   margin: calc(var(--spacing) / 2) auto;
-=======
-  display: grid;
-  grid-gap: var(--spacing);
-  margin-bottom: var(--spacing);
-  margin-top: var(--spacing);
->>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
   grid-template-columns: 1fr 1fr;
 
   h2 {
