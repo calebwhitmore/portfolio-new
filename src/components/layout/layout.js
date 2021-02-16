@@ -1,23 +1,15 @@
 import React from 'react';
 
 import Header from "../header/header"
-import About from "../about/about"
 import "./layout.scss"
 
 class Layout extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      aboutOpen: false,
       darkMode: false,
     }
     this.toggleDarkMode = this.toggleDarkMode.bind(this)
-    this.toggleAbout = this.toggleAbout.bind(this)
-  }
-  toggleAbout() {
-    let newState = { ...this.state }
-    newState = { ...this.state, aboutOpen: !this.state.aboutOpen}
-    this.setState(newState)
   }
 
   toggleDarkMode() {
@@ -53,7 +45,6 @@ class Layout extends React.Component {
         <div className="page">
           {this.props.children}
           </div>
-        {this.state.aboutOpen ? <About closeAbout={this.toggleAbout}/> : null}
         <footer></footer>
       </div>
     )

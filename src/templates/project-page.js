@@ -27,11 +27,9 @@ class ProjectPageTemplate extends React.Component {
         <SEO title={project.frontmatter.title} description={project.excerpt} />
         <div className="project-page-container">
           <div className="project-page">
-            <Img
-              className="project-header-image"
-              fluid={project.frontmatter.headerImage.childImageSharp.fluid}
-              alt={project.frontmatter.headerImageAltTag}
-            />
+            <div className="intro">
+              <h1 className="summary">{project.frontmatter.description}</h1>
+            </div>
             <div
               className="project-open-content"
               dangerouslySetInnerHTML={{ __html: project.html }}
@@ -44,7 +42,7 @@ class ProjectPageTemplate extends React.Component {
                   <p>←</p>
                 </div>{" "}
                 <h4>
-                  <span>Previous project</span>
+                  <span>Previous</span>
                   <br />
                   {next.frontmatter.title}
                 </h4>
@@ -53,7 +51,7 @@ class ProjectPageTemplate extends React.Component {
             {previous && (
               <Link className="previous" to={previous.fields.slug} rel="prev">
                 <h4>
-                  <span>Next project</span>
+                  <span>Next</span>
                   <br />
                   {previous.frontmatter.title}
                 </h4>
@@ -87,16 +85,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         tags
-        headerImageAltTag
-        headerImage {
-          childImageSharp {
-            fluid(maxWidth: 1200, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        projectSubTitle
-        projectDescription
+        description
       }
     }
   }

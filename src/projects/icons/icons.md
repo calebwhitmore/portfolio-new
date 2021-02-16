@@ -7,15 +7,16 @@ projectImage: "./icon-thumbnail.png"
 projectImageAltTag: "Illustration"
 headerImage: "./vector.png"
 headerImageAltTag: "Illustration vector"
+description: "Illustration series of some designs I think are pretty iconic."
 ---
 
 <div class="project-sub-head">
-    <h4 class="project-sub-title">
-        This project pays tribute to some designs that I think are pretty iconic.
-    </h4>
-    <h4 class="project-description">
-       I've tried to distill each objects form down into a style that's bold, simple, and captures each object by their core visual elements. With objects ranging from Aesop handwash to the Porsche 911.
-    </h4>
+    <p class="project-sub-title">
+        A homage.
+    </p>
+    <p class="project-description">
+       Using illustrator, I've tried to distill each objects form down into a style that's bold, simple, and captures each object by their core visual elements. With objects ranging from Aesop handwash to the Porsche 911.
+    </p>
 </div>
 
 ![Braun ET66](./braun-et66.png)
@@ -41,12 +42,12 @@ headerImageAltTag: "Illustration vector"
 ![polaroid](./polaroid.png)
 
 <div class="project-sub-head">
-    <h4 class="project-sub-title">
+    <p class="project-sub-title">
         Merch
-    </h4>
-    <h4 class="project-description">
+    </p>
+    <p class="project-description">
        I auctioned off a calendar that included the icons for the Microsoft Give auction, which is a yearly event that raises money for charity. Stickers are also in the works. 
-    </h4>
+    </p>
 </div>
 
 ![Icons Calendar](./icon-calendar.png)

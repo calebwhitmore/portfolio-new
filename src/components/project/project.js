@@ -9,8 +9,8 @@ export default function Project(props) {
     <Link to={props.project.fields.slug} className="project-container">
       <div className="project">
         <div className="projectTileText">
-          <h3 className="serif">{props.project.frontmatter.title}</h3>
-          <h4>{props.project.frontmatter.tags}</h4>
+          <h2 className="serif">{props.project.frontmatter.title}</h2>
+          <p>{props.project.frontmatter.tags}</p>
         </div>
         <Img
           className="post-image"

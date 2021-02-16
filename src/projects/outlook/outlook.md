@@ -7,26 +7,27 @@ projectImage: "./outlook-logo-large.png"
 projectImageAltTag: "Illustration"
 headerImage: "./outlook-logo-large.png"
 headerImageAltTag: "Outlook Logo"
+description: "Projects I've worked on as part of the Outlook team."
 ---
 
 <div class="project-sub-head">
-    <h4 class="project-sub-title">
+    <p class="project-sub-title">
         I am currently a Senior Product Designer at Outlook, Microsofts email client, in a role focused on communications and triage.
-    </h4>
-    <h4 class="project-description">
+    </p>
+    <p class="project-description">
         I've worked on a range of projects across it's ecosystem, from tasks integration to command bar customization and the message list. It's taught me how to work effectively inside a large organization, one that involves a lot of moving parts. This page contains snapshots of some of the projects I've been thankful to be a part of.
-    </h4>
+    </p>
 </div>
 
 <div class="project-sub-head">
-    <h4 class="project-sub-title">
+    <p class="project-sub-title">
         Command bar customization
         <br> <br>
         Outlook Web
-    </h4>
-    <h4 class="project-description">
+    </p>
+    <p class="project-description">
         Following the footsteps of others. we already had a customization experience on two of our other clients: Desktop and Mac. Mac had the best experience of the two, but not without it's own problems. User feedback had given some points for improvement on the Outlook Mac model, points that we sought to address with the implementation on web. 
-    </h4>
+    </p>
 </div>
 
 ![Command bar feedback](./commanding-feedback.png)
@@ -38,12 +39,12 @@ headerImageAltTag: "Outlook Logo"
 ![Responsive scaling](./layout.gif)
 
 <div class="project-sub-head">
-    <h4 class="project-sub-title">
+    <p class="project-sub-title">
         Hack week rendering.
-    </h4>
-    <h4 class="project-description">
+    </p>
+    <p class="project-description">
         For our hack week at microsoft, I wanted to spend some time learning more about rendering. I decided to spend a week creating models, and rendering out different scenes that could be used to surface different UI across our endpoints. The following images are the results of those experiments. The images are being used in future marketing explorations, and have been incorporated into the teams assets to use when presenting features. 
-    </h4>
+    </p>
 </div>
 
 ![Web and phone](./renders/web-and-phone.jpg)
@@ -53,27 +54,27 @@ headerImageAltTag: "Outlook Logo"
 ![Mobile and tablet](./renders/desktop-1.png)
 
 <div class="project-sub-head">
-    <h4 class="project-sub-title">
+    <p class="project-sub-title">
         Loading Animation
-    </h4>
-    <h4 class="project-description">
+    </p>
+    <p class="project-description">
         After wanting to learn more about animation, I took it upon myself to explore how we might create a loading animation for Outlook. Motion has the amazing ability to change perception of time. With this, I was aiming to make the app feel more agile on boot. 
-    </h4>
+    </p>
 </div>
 
 ![Outlook logo loading animation on blue background](./loading-animation-blue.gif)
 
 <div class="project-sub-head">
-    <h4 class="project-sub-title">
+    <p class="project-sub-title">
         Resizing Outlook on the web
-    </h4>
-    <h4 class="project-description">
+    </p>
+    <p class="project-description">
         I was tasked with making Outlook responsive, down to a screen size of 320px. We came up with a prioritization framework for how content should be respected - what to keep on screen and what to hide at different stages when real estate becomes an issue. 
         <br><br>
         It was the reverse of your normal process. Standard practice would have you start small and scale up; this was doing the opposite which came with a lot of complexities and fun challenges.
         <br><br>
         Below is a recording of a prototype I coded using React and CSS media queries to define breakpoints and apply relevant layout changes. This prototype was essential in helping us land the final resize behaviour. 
-    </h4>
+    </p>
 </div>
 
 

@@ -1,10 +1,9 @@
 import { Link } from "gatsby"
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
+import { Location } from "@reach/router"
 
-import sun from "../../images/icons/sun.svg"
-import moon from "../../images/icons/moon.svg"
-import headshot from "../../images/headshot.png"
+import ScrollAnimation from "react-animate-on-scroll"
 
 import "./header.scss"
 
@@ -13,6 +12,7 @@ class Header extends React.Component {
     super()
     this.state = {
       open: false,
+      pageTag: "",
     }
     this.toggleMenu = this.toggleMenu.bind(this)
   }
@@ -23,142 +23,69 @@ class Header extends React.Component {
     this.setState(newState)
   }
 
+  componentDidMount() {
+    this.setState({
+      pageTag: window.location.pathname.split("/")[1],
+    })
+  }
+
   render(props) {
     return (
-      <div className={"header " + (this.state.open ? "open " : " ")}>
-        <div className="header-item">
-            <button
-            className="nav-link">
-              <p>Home</p>
-            </button>
-            <button
-            className="nav-link">
-              <p>Portfolio</p>
-            </button>
-            <button
-            className="nav-link">
-              <p>About</p>
-            </button>
-            <button
-            className="nav-link">
-              <p>Writing</p>
-            </button>
-            <button
-            className="nav-link">
-              <p>AMA</p>
-            </button>
-            <button
-            className="nav-link">
-              <p>Bookmarks</p>
-            </button>
-
-            <div className="bar">
-              
-            </div>
-          {/* <button className="menu-toggle" onClick={this.toggleMenu}>
-          <div className="topLeft">
-            {this.props.showBack ? (
-              <Link to="./" className="arrow">
-                <div className="part1"></div>
-                <div className="part2"></div>
-                <div className="part3"></div>
-                <p></p>
+      <ScrollAnimation
+        offset={0}
+        animateIn="show"
+        animateOut="hide"
+        initiallyVisible={true}
+      >
+        <div className="header-container">
+          <div className={"header " + (this.state.open ? "open " : " ")}>
+            <div className="header-item">
+              <Link
+                className={
+                  "nav-link " +
+                  (this.state.pageTag === "" ? "selected " : "unselected ")
+                }
+                to="/"
+              >
+                <p>Portfolio</p>
               </Link>
-            ) : (
-              ""
-            )}
-            <div className="title">
-            <h1>
-              {this.props.pageTitleLine1}
-              <br></br>
-              {this.props.pageTitleLine2}
-            </h1>
-            <h2>{this.props.tags}</h2>
-          </div>
-          </div>
-          <div className="dark-mode-toggle">
-            <button
-              className="toggle-contain"
-              onClick={() => this.props.toggleDarkMode()}
-            >
-              <div
+              <Link
                 className={
-                  this.props.darkMode ? "toggle dark-mode-on" : "toggle"
+                  "nav-link " +
+                  (this.state.pageTag === "about" ? "selected " : "unselected ")
                 }
+                to="/about"
               >
-                {this.props.darkMode ? (
-                  <img
-                    className="moon"
-                    src={moon}
-                    alt="Photograph of the moon"
-                  ></img>
-                ) : (
-                  <img
-                    className="sun"
-                    src={sun}
-                    alt="Photograph of the sun"
-                  ></img>
-                )}
-              </div>
-            </button>
-          </div>
-          <button className="menu-toggle" onClick={this.toggleMenu}>
->>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
-            <div className="bar-1" />
-            <div className="bar-2" />
-            <div className="bar-3" />
-          </button>
-
-=======
-          
->>>>>>> 9b90713ffe3cb3be21ee4d94132931ac0cf7c748
-          <div className="navigation menu-item">
-            <Link className="link" to="/">
-              <h3>Home</h3>
-            </Link>
-            <button className="link" onClick={this.props.openAbout}>
-              <h3>About</h3>
-            </button>
-            <Link className="link" to="/">
-              <h3>Contact</h3>
-            </Link>
-            <a className="link" href="http://www.panop.co">
-              <h3>Blog</h3>
-            </a>
-          </div> 
-          
-          <div className="dark-mode-toggle">
-            <button
-              className="toggle-contain"
-              onClick={() => this.props.toggleDarkMode()}
-            >
-              <div
+                <p>About</p>
+              </Link>
+              {/* <Link
                 className={
-                  this.props.darkMode ? "toggle dark-mode-on" : "toggle"
+                  "nav-link " +
+                  (this.state.pageTag === "writing"
+                    ? "selected "
+                    : "unselected ")
                 }
+                to="/about"
               >
-                <div className="selection"></div>
-                  <img
-                    className="sun icon"
-                    src={sun}
-                    alt="Icon of the sun"
-                  ></img>
+                <p>Writing</p>
+              </Link> */}
+              <Link
+                className={
+                  "nav-link " +
+                  (this.state.pageTag === "bookmarks"
+                    ? "selected "
+                    : "unselected ")
+                }
+                to="/bookmarks"
+              >
+                <p>Bookmarks</p>
+              </Link>
 
-                  <img
-                    className="moon icon"
-                    src={moon}
-                    alt="Icon of the moon"
-                  ></img>
-
-              </div>
-            </button>
+              <div className="bar"></div>
+            </div>
           </div>
-          
-          */
-          }
-          </div>
-
         </div>
+      </ScrollAnimation>
     )
   }
 }
