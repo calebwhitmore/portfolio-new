@@ -1,0 +1,7 @@
+.footer-container {
+  grid-column-start: 1;
+grid-column-end: 3;
+  margin-top:var(--spacing2);
+  padding:calc(var(--spacing) * 1) 0;
+  color: var(--black60);
+}

@@ -12,10 +12,10 @@ description: "A product that helps with home ownership and maintenance."
 
 <div class="project-sub-head">
     <p class="project-sub-title">
-        Micasa helps you manage your home. I was the sole designer asked to deliver branding, illustrations, iconography, UX and UI.
+        Micasa helps you manage your home.
     </p>
     <p class="project-description">
-        The product is focused on the goal of helping home-owners keep their homes maintained. On their own, or by being connected to agents through the platform. Owning a home is no simple task - Micasa's goal is to make this simpler.
+        I was the sole designer asked to deliver branding, illustrations, iconography, UX and UI. The product is focused on the goal of helping home-owners keep their homes maintained. On their own, or by being connected to agents through the platform. Owning a home is no simple task - Micasa's goal is to make this simpler.
     </p>
 </div>
 

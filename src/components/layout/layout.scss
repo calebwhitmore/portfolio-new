@@ -18,7 +18,7 @@ body {
   height: 100%;
   display:grid;
   position:static;
-  margin-top: calc(var(--spacing) + 80px);
+  margin-top: var(--spacing);
   margin-bottom:var(--spacing);
   grid-template-columns: 1fr 1fr;
 
@@ -39,7 +39,7 @@ body {
   }
 
   .home-title {
-    margin-bottom:calc(var(--spacing) * 3);
+    margin-bottom:var(--spacing3);
   }
 }
 

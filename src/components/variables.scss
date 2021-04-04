@@ -11,6 +11,8 @@
   --black12: rgba(0, 0, 0, 0.12);
   --black08: rgba(0, 0, 0, 0.08);
   --black06: rgba(0, 0, 0, 0.06); 
+
+  --transparent: rgba(0, 0, 0, 0.00); 
   
   --white: #ffffff;
   --white90:rgba(255,255,255,0.9);
@@ -28,7 +30,9 @@
 
   --toggle-size: 52px;
 
-  --spacing: 2rem;
+  --spacing: 32px;
+  --spacing2: 64px;
+  --spacing3: 96px;
   --max-width: 800px;
 
   --grid-template-columns-3: 4fr 4fr 4fr;
@@ -42,8 +46,8 @@
   --font-size-s: 24px;
   --font-size-xs: 20px;
 
-  --border-radius-small:10px;
-  --border-radius-large:20px;
+  --border-radius-small:5px;
+  --border-radius-large:10px;
   --box-shadow-1:0px 2px 8px 0px var(--black-overlay-08);
 }
 
@@ -169,7 +173,7 @@ a {
 .intro {
   border-radius: var(--border-radius-large);
   margin: var(--spacing) 0;
-  padding: calc(var(--spacing) * 2) 0;
+  padding: var(--spacing2) 0;
   h1 {
     color: var(--black);
     text-align: left;

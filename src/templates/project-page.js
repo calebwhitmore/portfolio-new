@@ -5,8 +5,6 @@ import Layout from "../components/layout/layout"
 import Projects from "../components/projects/projects"
 import SEO from "../components/seo"
 
-import Img from "gatsby-image"
-
 import "./project-page.scss"
 
 class ProjectPageTemplate extends React.Component {

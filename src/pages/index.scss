@@ -1,7 +1,6 @@
 .intro {
   border-radius: var(--border-radius-large);
-  padding: calc(var(--spacing) * 3) 0;
-  margin:0;
+  padding: var(--spacing3) 0;
   h1 {
     color: var(--white);
     text-align: left;
@@ -10,4 +9,23 @@
   h4 {
     color:var(--light);
   }
+}
+.projects {
+  margin-top: var(--spacing2);
+}
+
+.home-sub-head {
+  // border-left:1px solid var(--black12);
+  //   padding-left:var(--spacing);
+  border-top: 1px solid var(--black12);
+  padding-top:var(--spacing2);
+}
+.home-sub-title {
+  color: var(--black90);
+  font-weight:700;
+  margin-bottom:var(--spacing);
+}
+
+.home-description {
+  color: var(--black60);
 }

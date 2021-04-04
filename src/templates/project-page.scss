@@ -25,7 +25,7 @@
     background-color: var(--black06);
     box-shadow: none;
     transition: 0.3s all ease;
-    margin: 0px 0px calc(var(--spacing) * 2) 0px;
+    margin: 0px 0px var(--spacing2) 0px;
     box-shadow: 0px 0px 0px 1px var(--black06);
     border-radius: var(--border-radius-large);
     overflow: hidden;
@@ -50,26 +50,18 @@
   }
   .project-page {
     .project-sub-head {
-      display: grid;
-      grid-gap: var(--spacing);
-      grid-template-columns: var(--grid-template-columns-3);
       opacity: 0;
       animation: fadeUp 0.2s forwards 0.1s ease;
       border-top: 1px solid var(--black12);
+      padding:var(--spacing2) 0;
 
-      p {
-        margin: calc(var(--spacing) * 2) 0px;
-      }
       .project-sub-title {
-        grid-column-start: 1;
-        grid-column-end: 2;
         color: var(--black90);
-        font-weight:600;
+        font-weight:700;
+        margin: 0px 0px var(--spacing) 0px;
       }
 
       .project-description {
-        grid-column-start: 2;
-        grid-column-end: 4;
         color: var(--black60);
       }
     }
@@ -159,7 +151,7 @@
         outline: none;
         box-shadow: 0px 0px 0px 4px var(--black);
         background-color: var(--black06);
-        padding: var(--spacing);
+        padding: calc(var(--spacing) / 2);
         h4 {
           color: var(--black90);
           span {
@@ -179,7 +171,7 @@
 
       .arrow {
         p {
-          transform: translateX(4px);
+          transform: translateX(-4px);
         }
       }
 

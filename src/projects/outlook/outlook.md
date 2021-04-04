@@ -12,18 +12,17 @@ description: "Projects I've worked on as part of the Outlook team."
 
 <div class="project-sub-head">
     <p class="project-sub-title">
-        I am currently a Senior Product Designer at Outlook, Microsofts email client, in a role focused on communications and triage.
+        Summary
     </p>
     <p class="project-description">
-        I've worked on a range of projects across it's ecosystem, from tasks integration to command bar customization and the message list. It's taught me how to work effectively inside a large organization, one that involves a lot of moving parts. This page contains snapshots of some of the projects I've been thankful to be a part of.
+        I'm currently a Senior Product Designer at Outlook (Microsofts email client), in a role focused on the Mac and Mobile apps. I've worked on a range of projects across it's ecosystem. It's taught me how to work effectively inside a large organization, one that involves a lot of moving parts. This page contains snapshots of some of the projects I've been thankful to be a part of.
     </p>
 </div>
 
 <div class="project-sub-head">
     <p class="project-sub-title">
-        Command bar customization
+        Toolbar customization on the web
         <br> <br>
-        Outlook Web
     </p>
     <p class="project-description">
         Following the footsteps of others. we already had a customization experience on two of our other clients: Desktop and Mac. Mac had the best experience of the two, but not without it's own problems. User feedback had given some points for improvement on the Outlook Mac model, points that we sought to address with the implementation on web. 
